@@ -47,7 +47,7 @@ public class Hooks {
                 e.printStackTrace();
             }
         }
-        ExcelUtilities.writeExcel("src/test/java/resources/ScenarioStatus.xlsx",scenario,BaseDriver.threadBrowserName.get(),date.format(formatter));
+        ExcelUtilities.writeExcel("src/main/resources/ScenarioStatus.xlsx",scenario,BaseDriver.threadBrowserName.get(),date.format(formatter));
         BaseDriver.DriverQuit();
     }
 }

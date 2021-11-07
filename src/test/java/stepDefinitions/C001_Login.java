@@ -7,6 +7,9 @@ import org.openqa.selenium.WebDriver;
 import pages.LoginRegisterPopUpElements;
 import pages.NavbarElements;
 import utilities.BaseDriver;
+import utilities.ExcelUtilities;
+
+import java.util.List;
 
 public class C001_Login {
     WebDriver driver;
@@ -29,9 +32,10 @@ public class C001_Login {
 
     @When("^Enter username and password and click login button$")
     public void enterUsernameAndPasswordAndClickLoginButton() {
+        List<List<String>> loginData = ExcelUtilities.getListData("src/main/resources/LoginData.xlsx","loginData",2);
         navbarElements.clickFunction(navbarElements.getBtnLogin());
-        loginRegisterPopUpElements.sendKeysFunction(loginRegisterPopUpElements.getInputEmail(),"enuygunotomation@mail.com.tr");
-        loginRegisterPopUpElements.sendKeysFunction(loginRegisterPopUpElements.getInputPassword(),"123456");
+        loginRegisterPopUpElements.sendKeysFunction(loginRegisterPopUpElements.getInputEmail(),loginData.get(1).get(0));
+        loginRegisterPopUpElements.sendKeysFunction(loginRegisterPopUpElements.getInputPassword(),loginData.get(1).get(1));
         loginRegisterPopUpElements.clickFunction(loginRegisterPopUpElements.getBtnSignIn());
     }
 

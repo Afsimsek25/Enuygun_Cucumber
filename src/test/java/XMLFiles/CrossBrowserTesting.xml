@@ -3,8 +3,13 @@
 
 
     <test name="test1">
-
         <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.RegressionRunner"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <parameter name="browser" value="edge"/>
         <classes>
             <class name="runners.RegressionRunner"/>
         </classes>

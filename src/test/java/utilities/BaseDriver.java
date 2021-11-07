@@ -3,6 +3,7 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseDriver {
@@ -23,9 +24,9 @@ public class BaseDriver {
                     WebDriverManager.chromedriver().setup();
                     threadDriver.set(new ChromeDriver());
                     break;
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    threadDriver.set(new FirefoxDriver());
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    threadDriver.set(new EdgeDriver());
                     break;
             }
         }

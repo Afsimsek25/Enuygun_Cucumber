@@ -9,8 +9,9 @@
 <ul>
 <li class="has-line-data" data-line-start="7" data-line-end="8"><a href="https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer/1.2.5">Pico Container</a> ile Dependency Injection</li>
 <li class="has-line-data" data-line-start="8" data-line-end="9"><a href="https://user-images.githubusercontent.com/28589393/49430151-3c894280-f7e5-11e8-8cbb-8773cba5c106.png">Extent Reporter</a> ile görselliği arttırılmış raporlama</li>
-<li class="has-line-data" data-line-start="9" data-line-end="10">Fail esnasında [FailedScreenShoot][df1] yeteneği</li>
-<li class="has-line-data" data-line-start="10" data-line-end="11">[Apache Poi][df1] ile Excel’den okuma/yazma yeteneği</li>
-<li class="has-line-data" data-line-start="11" data-line-end="12">[Bonigarcia WebDriver][df1] ile  Paralel/Cross Browser Testing</li>
-<li class="has-line-data" data-line-start="12" data-line-end="13">[Thread Browser][df1] ve [Thread Driver][df1]  yeteneği.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Fail esnasında <a href="https://github.com/Afsimsek25/Enuygun_Cucumber/blob/master/target/FailedScreenShots/login-functionality%3Blogin-with-valid-username-and-password07.11.21%2006.26.png">FailedScreenShoot</a> yeteneği</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/tree/master/src/test/java/resources">Apache Poi</a> ile Excel’den okuma/yazma yeteneği</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/tree/master/src/test/java/XMLFiles">Bonigarcia WebDriver</a> ile  Paralel/Cross Browser Testing</li>
+<li class="has-line-data" data-line-start="12" data-line-end="13"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/blob/master/src/test/java/utilities/BaseDriver.java">Thread Browser</a> ve <a href="https://github.com/Afsimsek25/Enuygun_Cucumber/blob/master/src/test/java/utilities/BaseDriver.java">Thread Driver</a>  yeteneği.</li>
 </ul>
+
