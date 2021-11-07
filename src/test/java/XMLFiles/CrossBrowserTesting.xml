@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit1" parallel="tests" thread-count="2">
+
+
+    <test name="test1">
+
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.RegressionRunner"/>
+        </classes>
+    </test>
+
+</suite>
