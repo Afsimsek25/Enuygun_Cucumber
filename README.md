@@ -1,4 +1,4 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="ENUYGUN_CUCUMBER_PROJECT_0"></a>ENUYGUN CUCUMBER PROJECT</h1>
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="ENUYGUNCOM_JavaCucumber_Projesi_0"></a><a href="http://ENUYGUN.COM">ENUYGUN.COM</a> Java-Cucumber Projesi</h1>
 <p class="has-line-data" data-line-start="1" data-line-end="2"><a href="http://enuygun.com">enuygun.com</a> için geliştirilen bu projedenin ana öğeleri şunlardır;</p>
 <ul>
 <li class="has-line-data" data-line-start="2" data-line-end="3">Java 11</li>
@@ -13,5 +13,5 @@
 <li class="has-line-data" data-line-start="10" data-line-end="11"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/tree/master/src/test/java/resources">Apache Poi</a> ile Excel’den okuma/yazma yeteneği</li>
 <li class="has-line-data" data-line-start="11" data-line-end="12"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/tree/master/src/test/java/XMLFiles">Bonigarcia WebDriver</a> ile  Paralel/Cross Browser Testing</li>
 <li class="has-line-data" data-line-start="12" data-line-end="13"><a href="https://github.com/Afsimsek25/Enuygun_Cucumber/blob/master/src/test/java/utilities/BaseDriver.java">Thread Browser</a> ve <a href="https://github.com/Afsimsek25/Enuygun_Cucumber/blob/master/src/test/java/utilities/BaseDriver.java">Thread Driver</a>  yeteneği.</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">Page Object Model(<a href="https://github.com/Afsimsek25/Enuygun_Cucumber/tree/master/src/test/java/pages">POM</a>) mimarisi.</li>
 </ul>
-

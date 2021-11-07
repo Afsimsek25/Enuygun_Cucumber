@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 7, 2021 08:28:59 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 7, 2021 09:00:23 PM</span>
 				</a>
 			</li>
 			<li>
@@ -87,7 +87,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Regression</a></li>
-					<li><a href='#'>@Smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -135,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,10 +164,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='90.909%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -185,15 +184,73 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login Functionality</span>
-						<span class='test-time'>Nov 7, 2021 08:28:59 PM</span>
+						<span class='test-time'>Nov 7, 2021 09:00:23 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='4' status='fail'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Regression</span>
 	</div>
-	<span class='duration right label'>0h 0m 25s+657ms</span>
+	<span class='duration right label'>0h 0m 27s+341ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Login with valid username and password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Navigate to Enuygun.com</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter username and password and click login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should login successfully</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[EdgeDriver: msedge on WINDOWS (f6790142034a67f1717929be2a36c562)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'FSIMSEK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.40, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56189}, msedge: {msedgedriverVersion: 95.0.1020.44 (745fe8ef5b67d..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56189/devtoo..., se:cdpVersion: 95.0.1020.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6790142034a67f1717929be2a36c562
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.Parent.verifyElementContainsText(Parent.java:62)
+	at stepDefinitions.C001_Login.userShouldLoginSuccessfully(C001_Login.java:44)
+	at ✽.Then User should login successfully(C001_login.feature:7)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Login Functionality</span>
+						<span class='test-time'>Nov 7, 2021 09:00:23 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='5' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Regression</span>
+	</div>
+	<span class='duration right label'>0h 0m 26s+814ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Login with valid username and password</span>
@@ -220,17 +277,17 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User should login successfully</span>
-				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[ChromeDriver: chrome on WINDOWS (6d8e8159875539852d5e5e7b5e58f882)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[ChromeDriver: chrome on WINDOWS (403524c01e63ea61ec434961d93b9c6e)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'FSIMSEK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55058/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d8e8159875539852d5e5e7b5e58f882
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56187/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 403524c01e63ea61ec434961d93b9c6e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at pages.Parent.verifyElementContainsText(Parent.java:62)
 	at stepDefinitions.C001_Login.userShouldLoginSuccessfully(C001_Login.java:44)
-	at ✽.Then User should login successfully(C001_login.feature:8)
+	at ✽.Then User should login successfully(C001_login.feature:7)
 </textarea></div>
 			
 		</li>
@@ -240,24 +297,24 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='2'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>Buying a plane ticket</span>
-						<span class='test-time'>Nov 7, 2021 08:28:59 PM</span>
+						<span class='test-time'>Nov 7, 2021 09:00:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='3' status='pass'>
+<div class='scenario node' test-id='12' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@Smoke</span>
+		<span class='category label white-text'>@Regression</span>
 	</div>
-	<span class='duration right label'>0h 0m 22s+950ms</span>
+	<span class='duration right label'>0h 0m 24s+684ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Buying a plane ticket</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='5' class='node given pass' status='pass'>
+		<li test-id='13' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -265,7 +322,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node when pass' status='pass'>
+		<li test-id='18' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -273,7 +330,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='10' class='node then pass' status='pass'>
+		<li test-id='19' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -281,7 +338,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='11' class='node then pass' status='pass'>
+		<li test-id='22' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -295,24 +352,24 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='12'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Buying a plane ticket</span>
-						<span class='test-time'>Nov 7, 2021 08:29:26 PM</span>
+						<span class='test-time'>Nov 7, 2021 09:00:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='13' status='pass'>
+<div class='scenario node' test-id='15' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@Regression</span>
 	</div>
-	<span class='duration right label'>0h 0m 21s+247ms</span>
+	<span class='duration right label'>0h 0m 23s+651ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Buying a plane ticket</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='14' class='node given pass' status='pass'>
+		<li test-id='16' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
@@ -320,7 +377,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='15' class='node when pass' status='pass'>
+		<li test-id='17' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
@@ -328,7 +385,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node then pass' status='pass'>
+		<li test-id='20' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -336,7 +393,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='17' class='node then pass' status='pass'>
+		<li test-id='21' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -402,14 +459,14 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 					<div class='category-heading'>
 						<span class='category-name'>@Regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -424,47 +481,23 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 7, 2021 08:28:59 PM</td>
-										<td class='linked' test-id='4'>Login Functionality.Login with valid username and password</td>
+										<td>Nov 7, 2021 09:00:23 PM</td>
+										<td class='linked' test-id='2'>Login Functionality.Login with valid username and password</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Nov 7, 2021 08:29:26 PM</td>
-										<td class='linked' test-id='13'>Buying a plane ticket.Buying a plane ticket</td>
+										<td>Nov 7, 2021 09:00:23 PM</td>
+										<td class='linked' test-id='5'>Login Functionality.Login with valid username and password</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 7, 2021 09:00:52 PM</td>
+										<td class='linked' test-id='12'>Buying a plane ticket.Buying a plane ticket</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Smoke</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 7, 2021 08:28:59 PM</td>
-										<td class='linked' test-id='3'>Buying a plane ticket.Buying a plane ticket</td>
+										<td>Nov 7, 2021 09:00:52 PM</td>
+										<td class='linked' test-id='15'>Buying a plane ticket.Buying a plane ticket</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -512,7 +545,7 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -526,19 +559,35 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 7, 2021 08:29:05 PM</td>
+                                                        <td>Nov 7, 2021 09:00:30 PM</td>
                                                         <td class='linked' test-id='9'>Login Functionality.Login with valid username and password.Then User should login successfully</td>
-                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[ChromeDriver: chrome on WINDOWS (6d8e8159875539852d5e5e7b5e58f882)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[ChromeDriver: chrome on WINDOWS (403524c01e63ea61ec434961d93b9c6e)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'FSIMSEK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55058/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d8e8159875539852d5e5e7b5e58f882
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56187/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 403524c01e63ea61ec434961d93b9c6e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at pages.Parent.verifyElementContainsText(Parent.java:62)
 	at stepDefinitions.C001_Login.userShouldLoginSuccessfully(C001_Login.java:44)
-	at ✽.Then User should login successfully(C001_login.feature:8)
+	at ✽.Then User should login successfully(C001_login.feature:7)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 7, 2021 09:00:30 PM</td>
+                                                        <td class='linked' test-id='10'>Login Functionality.Login with valid username and password.Then User should login successfully</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('enuygunotomation') to be present in element [[EdgeDriver: msedge on WINDOWS (f6790142034a67f1717929be2a36c562)] -> css selector: span[class*='NavbarUsername']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'FSIMSEK', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.40, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56189}, msedge: {msedgedriverVersion: 95.0.1020.44 (745fe8ef5b67d..., userDataDir: C:\Users\FURKAN~1.SIM\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56189/devtoo..., se:cdpVersion: 95.0.1020.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6790142034a67f1717929be2a36c562
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.Parent.verifyElementContainsText(Parent.java:62)
+	at stepDefinitions.C001_Login.userShouldLoginSuccessfully(C001_Login.java:44)
+	at ✽.Then User should login successfully(C001_login.feature:7)
 </textarea></pre></td>
                                                     </tr>
                                         </tbody>
@@ -565,37 +614,37 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 7, 2021 08:28:59 PM</div>
+					<div class='panel-lead'>Nov 7, 2021 09:00:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 7, 2021 08:29:48 PM</div>
+			 		<div class='panel-lead'>Nov 7, 2021 09:01:17 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>49,056ms</div>
+					<div class='panel-lead'>54,091ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -643,14 +692,8 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 						</tr>
 						<tr>
 							<td>@Regression</td>
-							<td>1</td>
-							<td>1</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@Smoke</td>
-							<td>1</td>
-							<td>0</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -677,30 +720,30 @@ Session ID: 6d8e8159875539852d5e5e7b5e58f882
 		<script>
 			var statusGroup = {
 				passParent: 2,
-				failParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
 				passChild: 2,
-				failChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
-				passGrandChild: 10,
-				failGrandChild: 1,
+				passGrandChild: 12,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		
