@@ -1,5 +1,5 @@
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="ENUYGUNCOM_JavaCucumber_Projesi_0"></a><a href="http://ENUYGUN.COM">ENUYGUN.COM</a> Java-Cucumber Projesi</h1>
-<p class="has-line-data" data-line-start="1" data-line-end="2"><a href="http://enuygun.com">enuygun.com</a> için geliştirilen bu projedenin ana öğeleri şunlardır;</p>
+<p class="has-line-data" data-line-start="1" data-line-end="2"><a href="http://enuygun.com">enuygun.com</a> üzerinde geliştirilen bu projedenin ana öğeleri şunlardır;</p>
 <ul>
 <li class="has-line-data" data-line-start="2" data-line-end="3">Java 11</li>
 <li class="has-line-data" data-line-start="3" data-line-end="4">Selenium IV</li>
